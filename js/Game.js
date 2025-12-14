@@ -13,7 +13,7 @@ function Game()
     var pillarGap = 125; // Vertical gap between top and bottom pillars (default was 100)
     
     // ADJUSTABLE SPACING BETWEEN PILLAR PAIRS
-    var pillarSpacing = 180; // Horizontal distance between pillar pairs (default was 144)
+    var pillarSpacing = 210; // Horizontal distance between pillar pairs (default was 144)
     
     var sources = {};    
    
