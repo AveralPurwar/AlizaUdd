@@ -10,10 +10,10 @@ function Game()
     var wonSoundPlayed = false;
     
     // ADJUSTABLE GAP BETWEEN TOP AND BOTTOM PILLARS
-    var pillarGap = 134; // Vertical gap between top and bottom pillars (default was 100)
+    var pillarGap = 125; // Vertical gap between top and bottom pillars (default was 100)
     
     // ADJUSTABLE SPACING BETWEEN PILLAR PAIRS
-    var pillarSpacing = 160; // Horizontal distance between pillar pairs (default was 144)
+    var pillarSpacing = 165; // Horizontal distance between pillar pairs (default was 144)
     
     var sources = {};    
    
@@ -42,6 +42,8 @@ function Game()
                 groundImg: 'images/ground.png',
                 bot: 'images/bot.png',
                 top: 'images/top.png',
+                bot1: 'images/bot1.png',
+                top1: 'images/top1.png',
                 aliza: 'images/aliza.png',
                 start: 'images/start.png'
             };
@@ -69,7 +71,7 @@ function Game()
             over = true;
             if(!wonSoundPlayed)
             {
-                var wonSound = new sound("sounds/won.mp3");
+                var wonSound = new sound("sounds/won.mp4");
                 wonSound.play();
                 wonSoundPlayed = true;
             }
@@ -271,4 +273,4 @@ function Game()
     {
         
     }
-}   
+}
